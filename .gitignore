@@ -1,0 +1,13 @@
+/.idea
+/datasets
+*.cfg
+*.tar.gz
+*.zip
+*.egg-info
+
+/__pycache__
+*.pyc
+*.txt
+*.jpg
+*.png
+*.csv
