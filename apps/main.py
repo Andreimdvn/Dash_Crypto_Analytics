@@ -85,9 +85,29 @@ def get_price_graph(coin):
     return dcc.Graph(id='my-graph', style={'width': '50%', 'height': '50%', 'margin-left': 'auto', 'margin-right': 'auto', 'align': 'center'}, className='char_div', figure=figure)
 
 
+def get_overall_verdict(coin):
+    pass
+
+
+def get_model_dashboard(coin, type):
+    pass
+
+
+def get_model_verdict(coin, type):
+    pass
+
+
+def get_model_verdict_graph(coin, type):
+    pass
+
+
+def get_model_history(coin, type):
+    pass
+
+
 @app.callback(Output('current_prediction', 'children'),
               [Input('tabs', 'value')])
-def update_graph(selected_dropdown_value):
+def update_page(selected_dropdown_value):
     coin = selected_dropdown_value
     print('wtf')
     return html.Div(id='main_div', children=[get_price_graph(coin)])
