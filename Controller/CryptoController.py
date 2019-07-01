@@ -26,3 +26,6 @@ class CryptoController:
             print("{} data loaded.".format(coin))
 
         return price_data
+
+    def get_overall_verdict(self, coin):
+        return "wtf"
